@@ -15,18 +15,18 @@
     <link rel="stylesheet" href="static/css/style.css">
 
 </head>
-<body>
+<body class="bg-dark">
     <!--The wrapper class adds a bit of extra functionality to Bootstrap. 
         It helps group the elements (e.g., title, paragraph, table, and filters) 
         and specifies the styling in our stylesheet.-->
     <div class="wrapper">
         <!--"navbar" indicates to Bootstrap that we want a component that fits 
             across the top of the page-->
-        <nav class="navbar navbar-expand-lg">
+        <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
             <a class="navbar-brand" href="index.html">UFO Sightings</a>
         </nav>
         <div class="jumbotron">
-            <h1>The Truth Is Out There</h1>
+            <h1 class="display-4">The Truth is Out There</h1>
         </div>
          <!--ensure that both elements we’re adding will span the width of the viewport. 
         The "row" class makes sure that the title and paragraph will align neatly along the page.-->   
@@ -55,15 +55,16 @@
         <div class="container-fluid">
             <div class="row">
               <div class="col-md-3">
-                <form>
+                <form class="bg-dark">
                     <p>Filter Search</p>
-                    <ul>
-                      <li>
-                        <label for="date">Enter Date</label>
+                    <ul class="bg-dark">
+                      <li class="bg-dark">
+                        <label for="date">Enter Date</label> 
+                        <label for="date">(1/1/2010 through 1/13/2010)</label>
                         <input type="text" placeholder="1/10/2010" id="datetime" />
                       </li>
-                      <li>
-                         <button id="filter-btn" type="button" class="btn btn-default">
+                      <li class="bg-dark">
+                         <button id="filter-btn" type="button" class="btn btn-dark">
                            Filter Table
                          </button>
                       </li>
@@ -89,6 +90,9 @@
             </div>
           </div>
 	</div>
-   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
+    <script src="static/js/data.js"></script>
+    <script src="static/js/app.js"></script>
+  
 </body>
 </html>
